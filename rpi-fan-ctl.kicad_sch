@@ -968,7 +968,7 @@
 				)
 			)
 		)
-		(symbol "Device:LED"
+		(symbol "Device:D"
 			(pin_numbers hide)
 			(pin_names
 				(offset 1.016) hide)
@@ -983,7 +983,7 @@
 					)
 				)
 			)
-			(property "Value" "LED"
+			(property "Value" "D"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -1009,7 +1009,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Light emitting diode"
+			(property "Description" "Diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1018,7 +1018,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "LED diode"
+			(property "Sim.Device" "D"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1027,7 +1027,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+			(property "Sim.Pins" "1=K 2=A"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1036,10 +1036,28 @@
 					(hide yes)
 				)
 			)
-			(symbol "LED_0_1"
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -1.27 1.27) (xy -1.27 -1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -1051,7 +1069,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 0) (xy 1.27 0)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
 						(width 0)
@@ -1063,7 +1081,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -1073,32 +1091,8 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
-			(symbol "LED_1_1"
+			(symbol "D_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -1258,49 +1252,50 @@
 				)
 			)
 		)
-		(symbol "Simulation_SPICE:NPN"
-			(pin_numbers hide)
+		(symbol "J-Link-SWD-rescue:LTST-C191TBKT-dk_LED-Indication-Discrete"
 			(pin_names
 				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q"
-				(at -2.54 7.62 0)
+			(property "Reference" "D"
+				(at -3.81 2.54 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Value" "NPN"
-				(at -2.54 5.08 0)
+			(property "Value" "dk_LED-Indication-Discrete_LTST-C191TBKT"
+				(at 0 -3.81 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Footprint" ""
-				(at 63.5 0 0)
+			(property "Footprint" "digikey-footprints:0603"
+				(at 5.08 5.08 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-				(at 63.5 0 0)
+			(property "Datasheet" "http://optoelectronics.liteon.com/upload/download/DS22-2000-230/LTST-C191TBKT.pdf"
+				(at 5.08 7.62 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1309,62 +1304,104 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Device" "NPN"
-				(at 0 0 0)
+			(property "Digi-Key_PN" "160-1647-1-ND"
+				(at 5.08 10.16 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Sim.Type" "GUMMELPOON"
-				(at 0 0 0)
+			(property "MPN" "LTST-C191TBKT"
+				(at 5.08 12.7 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Sim.Pins" "1=C 2=B 3=E"
-				(at 0 0 0)
+			(property "Category" "Optoelectronics"
+				(at 5.08 15.24 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "simulation"
-				(at 0 0 0)
+			(property "Family" "LED Indication - Discrete"
+				(at 5.08 17.78 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(symbol "NPN_0_1"
+			(property "DK_Datasheet_Link" "http://optoelectronics.liteon.com/upload/download/DS22-2000-230/LTST-C191TBKT.pdf"
+				(at 5.08 20.32 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "DK_Detail_Page" "/product-detail/en/lite-on-inc/LTST-C191TBKT/160-1647-1-ND/573587"
+				(at 5.08 22.86 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "LED BLUE CLEAR CHIP SMD"
+				(at 5.08 25.4 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Lite-On Inc."
+				(at 5.08 27.94 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Status" "Active"
+				(at 5.08 30.48 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(symbol "LTST-C191TBKT-dk_LED-Indication-Discrete_0_1"
 				(polyline
 					(pts
-						(xy -2.54 0) (xy 0.635 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
+						(xy -0.635 3.81) (xy -1.905 2.54)
 					)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
 						(type none)
@@ -1372,35 +1409,11 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 -1.27) (xy 2.794 -1.27)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 -1.27) (xy 2.794 -1.27)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
+						(xy 0 1.27) (xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
 						(type none)
@@ -1408,45 +1421,58 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
+						(xy 0.635 3.175) (xy -0.635 1.905)
 					)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 3.81) (xy -0.635 3.81) (xy -0.635 3.175)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.175) (xy 0.635 3.175) (xy 0.635 2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
 					)
 					(fill
 						(type outline)
 					)
 				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
-			(symbol "NPN_1_1"
-				(pin open_collector line
-					(at 2.54 5.08 270)
+			(symbol "LTST-C191TBKT-dk_LED-Indication-Discrete_1_1"
+				(pin passive line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "C"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1461,10 +1487,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
+				(pin passive line
+					(at 2.54 0 180)
 					(length 2.54)
-					(name "B"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1472,24 +1498,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_emitter line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1843,13 +1851,13 @@
 		(uuid "14b1beda-1a9f-40e3-82bc-44884e1f61e1")
 	)
 	(junction
-		(at 254 48.26)
+		(at 254 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1991d2eb-0a76-407e-a750-0e700966154f")
 	)
 	(junction
-		(at 254 33.02)
+		(at 254 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "28262c65-7ffa-4651-a52f-215349b4a9da")
@@ -1859,6 +1867,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3af151f1-d5bc-4613-8703-4114fa78d48b")
+	)
+	(junction
+		(at 257.81 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41f8cf7e-1af4-4750-b36b-7f72729f279d")
+	)
+	(junction
+		(at 257.81 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5925b5ee-d47f-47c7-b0d9-2a733c4ebb35")
 	)
 	(junction
 		(at 152.4 127)
@@ -1885,13 +1905,25 @@
 		(uuid "9ad398db-715f-4733-956d-95c17834e9e9")
 	)
 	(junction
-		(at 254 22.86)
+		(at 254 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9ffd9aba-a85f-4a27-91d0-1e67f25ddcc7")
 	)
 	(junction
-		(at 254 58.42)
+		(at 257.81 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d46fbe2c-7975-4dda-879a-56e27bd170bc")
+	)
+	(junction
+		(at 257.81 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e33c9c74-498d-4394-b58c-0ea377808d41")
+	)
+	(junction
+		(at 254 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e868e3bb-cfdf-4409-959b-9ea69f83485a")
@@ -1928,7 +1960,17 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 21.59) (xy 236.22 21.59)
+			(xy 257.81 36.83) (xy 266.7 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16069071-ba9b-4de3-a834-dfd50cb7953b")
+	)
+	(wire
+		(pts
+			(xy 233.68 25.4) (xy 236.22 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1938,7 +1980,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 60.96) (xy 176.53 68.58)
+			(xy 177.8 54.61) (xy 177.8 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1948,7 +1990,17 @@
 	)
 	(wire
 		(pts
-			(xy 254 46.99) (xy 254 48.26)
+			(xy 266.7 62.23) (xy 266.7 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19dc0fe1-b117-43bf-8420-395a9aaa80ab")
+	)
+	(wire
+		(pts
+			(xy 254 50.8) (xy 254 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1958,7 +2010,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 52.07) (xy 254 52.07)
+			(xy 233.68 55.88) (xy 254 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1988,17 +2040,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 78.74) (xy 176.53 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2652314f-6ac7-4013-a6c1-d7d2e7f03bc4")
-	)
-	(wire
-		(pts
-			(xy 254 48.26) (xy 257.81 48.26)
+			(xy 254 52.07) (xy 257.81 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2008,7 +2050,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 54.61) (xy 254 58.42)
+			(xy 254 58.42) (xy 254 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2038,7 +2080,17 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 25.4) (xy 43.18 25.4)
+			(xy 266.7 26.67) (xy 266.7 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34d9d657-46fb-420a-a6a0-bffc30b997e4")
+	)
+	(wire
+		(pts
+			(xy 30.48 25.4) (xy 31.7386 25.4)
 		)
 		(stroke
 			(width 0)
@@ -2048,7 +2100,27 @@
 	)
 	(wire
 		(pts
-			(xy 254 33.02) (xy 254 34.29)
+			(xy 76.2 160.02) (xy 76.2 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ffd8a37-d1f9-4bc8-9063-22d9da3b68dd")
+	)
+	(wire
+		(pts
+			(xy 76.2 181.61) (xy 76.2 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41ebc14e-db29-4cd6-bef8-d7d58a6a7a5c")
+	)
+	(wire
+		(pts
+			(xy 254 36.83) (xy 254 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2058,7 +2130,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 48.26) (xy 254 52.07)
+			(xy 254 52.07) (xy 254 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2068,7 +2140,17 @@
 	)
 	(wire
 		(pts
-			(xy 254 58.42) (xy 257.81 58.42)
+			(xy 39.3586 25.4) (xy 43.18 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46f3e6b9-06a6-492d-9eff-aa8d1027ba4a")
+	)
+	(wire
+		(pts
+			(xy 254 62.23) (xy 257.81 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2078,7 +2160,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 22.86) (xy 254 26.67)
+			(xy 254 26.67) (xy 254 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2098,17 +2180,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 73.66) (xy 156.21 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5194c0d7-ab98-40a8-a79a-f86895bbc6c0")
-	)
-	(wire
-		(pts
-			(xy 257.81 57.15) (xy 257.81 58.42)
+			(xy 257.81 60.96) (xy 257.81 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2138,7 +2210,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 21.59) (xy 254 22.86)
+			(xy 254 25.4) (xy 254 26.67)
 		)
 		(stroke
 			(width 0)
@@ -2168,7 +2240,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 31.75) (xy 257.81 33.02)
+			(xy 257.81 35.56) (xy 257.81 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2188,7 +2260,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 33.02) (xy 257.81 33.02)
+			(xy 254 36.83) (xy 257.81 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2198,7 +2270,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 21.59) (xy 273.05 26.67)
+			(xy 203.2 29.21) (xy 203.2 34.29)
 		)
 		(stroke
 			(width 0)
@@ -2208,7 +2280,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 22.86) (xy 257.81 22.86)
+			(xy 254 26.67) (xy 257.81 26.67)
 		)
 		(stroke
 			(width 0)
@@ -2228,6 +2300,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 52.07) (xy 266.7 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c7244a3-b222-489d-96a3-92aef458bcb8")
+	)
+	(wire
+		(pts
 			(xy 149.86 127) (xy 152.4 127)
 		)
 		(stroke
@@ -2235,6 +2317,16 @@
 			(type default)
 		)
 		(uuid "7fadcfdb-d983-4424-a8dc-9d4c18ffbaa6")
+	)
+	(wire
+		(pts
+			(xy 266.7 36.83) (xy 266.7 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87457d23-59c8-4634-a5ff-b5915211d291")
 	)
 	(wire
 		(pts
@@ -2258,7 +2350,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 58.42) (xy 254 59.69)
+			(xy 254 62.23) (xy 254 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2278,7 +2370,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 54.61) (xy 254 54.61)
+			(xy 233.68 58.42) (xy 254 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2318,7 +2410,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 48.26) (xy 176.53 53.34)
+			(xy 177.8 41.91) (xy 177.8 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2328,7 +2420,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 29.21) (xy 254 33.02)
+			(xy 254 33.02) (xy 254 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2338,13 +2430,13 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 73.66) (xy 168.91 73.66)
+			(xy 257.81 52.07) (xy 266.7 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a31e9509-ec1f-4f96-9ffc-8f797863ce8b")
+		(uuid "a2332464-6e15-4a8d-b938-f4307275af25")
 	)
 	(wire
 		(pts
@@ -2358,7 +2450,17 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 34.29) (xy 273.05 39.37)
+			(xy 76.2 118.11) (xy 76.2 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a84d2be5-01fe-4bf4-b30c-9f7cc006d0a2")
+	)
+	(wire
+		(pts
+			(xy 203.2 41.91) (xy 203.2 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2368,7 +2470,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 46.99) (xy 236.22 46.99)
+			(xy 233.68 50.8) (xy 236.22 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2398,13 +2500,23 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 35.56) (xy 176.53 40.64)
+			(xy 177.8 29.21) (xy 177.8 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b66d8e5c-5a16-4453-8dbe-a05b1f20beb2")
+	)
+	(wire
+		(pts
+			(xy 76.2 109.22) (xy 76.2 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb65cd9b-e936-4975-9d90-3827aa95b9cb")
 	)
 	(wire
 		(pts
@@ -2418,7 +2530,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 48.26) (xy 257.81 49.53)
+			(xy 257.81 52.07) (xy 257.81 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2428,7 +2540,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 29.21) (xy 254 29.21)
+			(xy 233.68 33.02) (xy 254 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2438,7 +2550,17 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 22.86) (xy 43.18 22.86)
+			(xy 76.2 130.81) (xy 76.2 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb6f919c-0505-4891-92f6-751a8d7182fc")
+	)
+	(wire
+		(pts
+			(xy 30.48 22.86) (xy 31.75 22.86)
 		)
 		(stroke
 			(width 0)
@@ -2468,7 +2590,17 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 22.86) (xy 257.81 24.13)
+			(xy 257.81 62.23) (xy 266.7 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d382cd8f-403a-4681-a2ae-724f978aa6b8")
+	)
+	(wire
+		(pts
+			(xy 257.81 26.67) (xy 257.81 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2478,7 +2610,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 20.32) (xy 43.18 20.32)
+			(xy 30.48 20.32) (xy 31.75 20.32)
 		)
 		(stroke
 			(width 0)
@@ -2518,7 +2650,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 26.67) (xy 254 26.67)
+			(xy 233.68 30.48) (xy 254 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2548,6 +2680,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 22.86) (xy 43.18 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb4d598f-4051-41d8-9f94-c0577faa1446")
+	)
+	(wire
+		(pts
 			(xy 25.4 68.58) (xy 25.4 67.31)
 		)
 		(stroke
@@ -2568,7 +2710,17 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 46.99) (xy 273.05 53.34)
+			(xy 257.81 26.67) (xy 266.7 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f05b631a-b5b1-4d7a-915e-442db6f3b91b")
+	)
+	(wire
+		(pts
+			(xy 203.2 54.61) (xy 203.2 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2588,7 +2740,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 49.53) (xy 236.22 49.53)
+			(xy 233.68 53.34) (xy 236.22 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2605,6 +2757,16 @@
 			(type default)
 		)
 		(uuid "f33e86a5-536d-4d45-982e-0393bce14d3d")
+	)
+	(wire
+		(pts
+			(xy 76.2 168.91) (xy 76.2 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8678013-7ff2-47aa-8f45-5da01c076486")
 	)
 	(wire
 		(pts
@@ -2628,7 +2790,17 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 24.13) (xy 236.22 24.13)
+			(xy 39.37 20.32) (xy 43.18 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbba3f41-1f24-4441-a96f-f940cceee21b")
+	)
+	(wire
+		(pts
+			(xy 233.68 27.94) (xy 236.22 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2654,6 +2826,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TACH1_3V3"
+		(shape input)
+		(at 119.38 127 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3489cbb7-85f9-4270-ba71-d7b88122834e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.0534 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -2724,53 +2918,9 @@
 			)
 		)
 	)
-	(global_label "TACH1_3V3"
+	(global_label "TACH2_3V3"
 		(shape input)
-		(at 119.38 127 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7cc2a1c0-d5a1-49d7-ab9a-c0c4b5da17fa")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 106.0534 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PWM_CTL_5V"
-		(shape input)
-		(at 151.13 73.66 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "893a0b00-5e46-47e8-8846-ac240fb5144f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 136.473 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PWM_CTL_5V"
-		(shape input)
-		(at 236.22 46.99 0)
+		(at 76.2 160.02 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2778,9 +2928,9 @@
 			)
 			(justify left)
 		)
-		(uuid "a9dcc580-a128-48d3-95cc-8ad7c47950c3")
+		(uuid "757e7699-abe8-4671-8897-cc0a767be179")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 250.877 46.99 0)
+			(at 76.2 146.6934 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2790,9 +2940,75 @@
 			)
 		)
 	)
-	(global_label "Tach1_5V"
+	(global_label "TACH1_3V3"
 		(shape input)
-		(at 236.22 24.13 0)
+		(at 76.2 109.22 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7cc2a1c0-d5a1-49d7-ab9a-c0c4b5da17fa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 76.2 95.8934 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PWM_CTL_5V"
+		(shape input)
+		(at 177.8 29.21 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "893a0b00-5e46-47e8-8846-ac240fb5144f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 177.8 14.553 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PWM_CTL_5V"
+		(shape input)
+		(at 236.22 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a9dcc580-a128-48d3-95cc-8ad7c47950c3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.877 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TACH1_5V"
+		(shape input)
+		(at 236.22 27.94 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2802,7 +3018,7 @@
 		)
 		(uuid "aac58b40-a719-4887-802a-9a623e034515")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 248.0346 24.13 0)
+			(at 248.3371 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2902,7 +3118,7 @@
 	)
 	(global_label "PWM_CTL_5V"
 		(shape input)
-		(at 236.22 21.59 0)
+		(at 236.22 25.4 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2912,7 +3128,7 @@
 		)
 		(uuid "e97a1695-142b-4300-aec6-526d59bf8d95")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 250.877 21.59 0)
+			(at 250.877 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2922,9 +3138,9 @@
 			)
 		)
 	)
-	(global_label "Tach2_5V"
+	(global_label "TACH2_5V"
 		(shape input)
-		(at 236.22 49.53 0)
+		(at 236.22 53.34 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2934,7 +3150,7 @@
 		)
 		(uuid "f3271297-fbd4-4005-8dfd-2768cfa4b8fe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 248.0346 49.53 0)
+			(at 248.3371 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2954,7 +3170,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00698b3d-a426-4276-8ab8-4bd8bb4fda3d")
-		(property "Reference" "R6"
+		(property "Reference" "R8"
 			(at 154.178 130.8678 0)
 			(effects
 				(font
@@ -3008,7 +3224,7 @@
 		(instances
 			(project "rpi-fan-ctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "R6")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -3023,7 +3239,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0464731b-b165-4216-8922-df200c25f9cb")
-		(property "Reference" "JSUP_RPI"
+		(property "Reference" "SUP1"
 			(at 228.6 69.5155 0)
 			(effects
 				(font
@@ -3039,7 +3255,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal"
 			(at 228.6 77.47 0)
 			(effects
 				(font
@@ -3075,7 +3291,159 @@
 		(instances
 			(project ""
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "JSUP_RPI")
+					(reference "SUP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "J-Link-SWD-rescue:LTST-C191TBKT-dk_LED-Indication-Discrete")
+		(at 76.2 128.27 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0a5155f1-1c06-4f30-b17b-cfb3995fa726")
+		(property "Reference" "D5"
+			(at 80.7212 125.6538 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LTST-C191TBKT"
+			(at 80.7212 128.3462 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
+			(at 81.28 133.35 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://optoelectronics.liteon.com/upload/download/DS22-2000-230/LTST-C191TBKT.pdf"
+			(at 83.82 133.35 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "LED BLUE CLEAR CHIP SMD"
+			(at 101.6 133.35 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "160-1647-1-ND"
+			(at 86.36 133.35 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LTST-C191TBKT"
+			(at 88.9 133.35 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Optoelectronics"
+			(at 91.44 133.35 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "LED Indication - Discrete"
+			(at 93.98 133.35 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "http://optoelectronics.liteon.com/upload/download/DS22-2000-230/LTST-C191TBKT.pdf"
+			(at 96.52 133.35 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/lite-on-inc/LTST-C191TBKT/160-1647-1-ND/573587"
+			(at 99.06 133.35 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Lite-On Inc."
+			(at 104.14 133.35 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 106.68 133.35 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "45b4701b-5e4c-41f4-b950-496d67762819")
+		)
+		(pin "1"
+			(uuid "88333bf5-5100-488f-9230-42182560e265")
+		)
+		(instances
+			(project "rpi-fan-ctl"
+				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -3091,7 +3459,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0fb38f98-c62e-42fd-b0a1-828c0af81dff")
-		(property "Reference" "C3"
+		(property "Reference" "C4"
 			(at 256.921 113.0878 0)
 			(effects
 				(font
@@ -3145,7 +3513,7 @@
 		(instances
 			(project "rpi-fan-ctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "C3")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -3153,7 +3521,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 257.81 53.34 0)
+		(at 257.81 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3162,7 +3530,7 @@
 		(fields_autoplaced yes)
 		(uuid "27f2838c-735a-46cb-8b7e-6864c63a93aa")
 		(property "Reference" "C2"
-			(at 260.731 52.1278 0)
+			(at 260.731 55.9378 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3171,7 +3539,7 @@
 			)
 		)
 		(property "Value" "0u1"
-			(at 260.731 54.5521 0)
+			(at 260.731 58.3621 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3180,7 +3548,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 258.7752 57.15 0)
+			(at 258.7752 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3189,7 +3557,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 257.81 53.34 0)
+			(at 257.81 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3198,7 +3566,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 257.81 53.34 0)
+			(at 257.81 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3223,7 +3591,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 273.05 53.34 0)
+		(at 203.2 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3231,8 +3599,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3005a788-7d75-4c5a-a9b1-f9f249c7cba6")
-		(property "Reference" "#PWR03"
-			(at 273.05 59.69 0)
+		(property "Reference" "#PWR011"
+			(at 203.2 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3241,7 +3609,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 273.05 57.4731 0)
+			(at 203.2 65.0931 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3249,7 +3617,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 273.05 53.34 0)
+			(at 203.2 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3258,7 +3626,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 273.05 53.34 0)
+			(at 203.2 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3267,7 +3635,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 273.05 53.34 0)
+			(at 203.2 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3281,7 +3649,7 @@
 		(instances
 			(project "5Vfanctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR03")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -3296,7 +3664,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3150b183-ba4b-4f91-b822-544b4b91865f")
-		(property "Reference" "U3"
+		(property "Reference" "U1"
 			(at 128.27 37.7655 0)
 			(effects
 				(font
@@ -3312,7 +3680,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering"
 			(at 129.54 48.26 0)
 			(effects
 				(font
@@ -3339,7 +3707,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.de/en/products/detail/texas-instruments/SN74LVC2G17DCKR/479737"
+		(property "DigiKey" "https://www.digikey.de/en/products/detail/texas-instruments/SN74LVC2G17DBVR/479735"
 			(at 129.54 48.26 0)
 			(effects
 				(font
@@ -3369,15 +3737,81 @@
 		(instances
 			(project ""
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "U3")
+					(reference "U1")
 					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 76.2 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "327c5d0d-ae8e-448f-9766-ab1cdd382d65")
+		(property "Reference" "#PWR017"
+			(at 76.2 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 141.2931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e278971-96a1-408b-a45f-b2284520c13b")
+		)
+		(instances
+			(project "rpi-fan-ctl"
+				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
-		(at 257.81 27.94 0)
+		(at 257.81 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3386,7 +3820,7 @@
 		(fields_autoplaced yes)
 		(uuid "32ee769f-1bc8-4de3-81e9-a5dd360fb8d3")
 		(property "Reference" "C1"
-			(at 260.731 26.7278 0)
+			(at 260.731 30.5378 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3395,7 +3829,7 @@
 			)
 		)
 		(property "Value" "0u1"
-			(at 260.731 29.1521 0)
+			(at 260.731 32.9621 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3404,7 +3838,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 258.7752 31.75 0)
+			(at 258.7752 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3413,7 +3847,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 257.81 27.94 0)
+			(at 257.81 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3422,7 +3856,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 257.81 27.94 0)
+			(at 257.81 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3447,16 +3881,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 254 34.29 0)
+		(at 254 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3a65fc46-e017-4ca6-ac03-97d69f06dd4e")
-		(property "Reference" "#PWR08"
-			(at 254 40.64 0)
+		(property "Reference" "#PWR05"
+			(at 254 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3465,7 +3898,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 254 38.4231 0)
+			(at 254 42.2331 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3473,7 +3906,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 254 34.29 0)
+			(at 254 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3482,7 +3915,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254 34.29 0)
+			(at 254 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3491,7 +3924,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 254 34.29 0)
+			(at 254 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3505,7 +3938,7 @@
 		(instances
 			(project "5Vfanctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR08")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -3521,7 +3954,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3fe4e770-7731-4628-912f-45be2a18a47c")
-		(property "Reference" "U2"
+		(property "Reference" "U1"
 			(at 234.442 113.0878 0)
 			(effects
 				(font
@@ -3539,7 +3972,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering"
 			(at 228.6 114.3 0)
 			(effects
 				(font
@@ -3558,6 +3991,15 @@
 			)
 		)
 		(property "Description" "Dual Buffer, Schmitt Triggered, Low-Voltage CMOS"
+			(at 228.6 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.de/en/products/detail/texas-instruments/SN74LVC2G17DBVR/479735"
 			(at 228.6 114.3 0)
 			(effects
 				(font
@@ -3587,7 +4029,7 @@
 		(instances
 			(project "rpi-fan-ctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "U2")
+					(reference "U1")
 					(unit 3)
 				)
 			)
@@ -3603,7 +4045,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3feb7a4d-217f-408c-9aef-c179b3cc7b73")
-		(property "Reference" "R3"
+		(property "Reference" "R7"
 			(at 154.178 120.7078 0)
 			(effects
 				(font
@@ -3657,7 +4099,75 @@
 		(instances
 			(project ""
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "R3")
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 35.56 20.32 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "457b53e1-b434-46f2-bd31-13320225deda")
+		(property "Reference" "R1"
+			(at 35.56 15.1595 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 35.56 17.5838 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 35.56 22.098 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 35.56 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ad9af7d0-fedf-42f5-ba88-60e63589ffa4")
+		)
+		(pin "1"
+			(uuid "43f0a53a-247d-4ef8-be57-497c2dffb00a")
+		)
+		(instances
+			(project "rpi-fan-ctl"
+				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -3673,7 +4183,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4646cfcb-92cd-42c0-9824-d0db045aea2a")
-		(property "Reference" "U3"
+		(property "Reference" "U1"
 			(at 128.27 21.2555 0)
 			(effects
 				(font
@@ -3689,7 +4199,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering"
 			(at 129.54 31.75 0)
 			(effects
 				(font
@@ -3716,7 +4226,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.de/en/products/detail/texas-instruments/SN74LVC2G17DCKR/479737"
+		(property "DigiKey" "https://www.digikey.de/en/products/detail/texas-instruments/SN74LVC2G17DBVR/479735"
 			(at 129.54 31.75 0)
 			(effects
 				(font
@@ -3726,164 +4236,10 @@
 			)
 		)
 		(pin "6"
-			(uuid "c0ada149-cd9f-41b0-afae-d6c813b28fca")
+			(uuid "c0ada149-cd9f-41b0-afae-d6c813b28fcc")
 		)
 		(pin "1"
-			(uuid "08b5078d-2ec2-4281-9428-c657b13b5a6e")
-		)
-		(pin "3"
-			(uuid "b736378f-4418-4f9f-8180-ef4e0f40ca8a")
-		)
-		(pin "2"
-			(uuid "ee59a325-6e61-4366-9bf5-336da3c66ed3")
-		)
-		(pin "4"
-			(uuid "c6a6654d-2b60-4371-aa33-a31826c2735c")
-		)
-		(pin "5"
-			(uuid "6bdd30c9-ab4d-4af1-b271-18987082a30f")
-		)
-		(instances
-			(project ""
-				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 254 21.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "51cf518e-fb92-4bb1-80cc-54d1a4418e51")
-		(property "Reference" "#PWR07"
-			(at 254 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 254 17.4569 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 254 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 254 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 254 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8665e56a-abc3-4227-9b66-5352a0a237f0")
-		)
-		(instances
-			(project "5Vfanctl"
-				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xGxx:74LVC2G17")
-		(at 137.16 127 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "575fad8b-85be-4e7a-a2e2-dfa20b42594e")
-		(property "Reference" "U1"
-			(at 135.89 116.5055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LVC2G17"
-			(at 135.89 118.9298 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering"
-			(at 137.16 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 137.16 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual Buffer, Schmitt Triggered, Low-Voltage CMOS"
-			(at 137.16 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey" "https://www.digikey.de/en/products/detail/texas-instruments/SN74LVC2G17DCKR/479737"
-			(at 137.16 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "e83cc70a-4f95-4338-b0be-a39de5a52760")
-		)
-		(pin "1"
-			(uuid "e99b3831-db35-4982-b4a6-05ef413e96a0")
+			(uuid "08b5078d-2ec2-4281-9428-c657b13b5a70")
 		)
 		(pin "3"
 			(uuid "b736378f-4418-4f9f-8180-ef4e0f40ca8c")
@@ -3898,7 +4254,7 @@
 			(uuid "6bdd30c9-ab4d-4af1-b271-18987082a310")
 		)
 		(instances
-			(project "rpi-fan-ctl"
+			(project ""
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
 					(reference "U1")
 					(unit 1)
@@ -3907,16 +4263,84 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 254 46.99 0)
+		(lib_id "Device:R")
+		(at 35.5486 25.4 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "58c55fe2-dc88-426c-b6e3-a54f43f1ac9a")
-		(property "Reference" "#PWR02"
-			(at 254 50.8 0)
+		(fields_autoplaced yes)
+		(uuid "4af15e81-300e-456f-8a7f-613462ca93ed")
+		(property "Reference" "R3"
+			(at 35.5486 20.2395 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 35.5486 22.6638 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 35.5486 27.178 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.5486 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 35.5486 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "32433067-2c35-425e-bdd1-bdaa92a05d85")
+		)
+		(pin "1"
+			(uuid "41c8f542-d35d-47fb-9763-1a30f036b1d3")
+		)
+		(instances
+			(project "rpi-fan-ctl"
+				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 254 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "51cf518e-fb92-4bb1-80cc-54d1a4418e51")
+		(property "Reference" "#PWR01"
+			(at 254 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3925,7 +4349,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 254 42.8569 0)
+			(at 254 21.2669 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3933,7 +4357,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 254 46.99 0)
+			(at 254 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3942,7 +4366,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254 46.99 0)
+			(at 254 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3951,7 +4375,152 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 254 46.99 0)
+			(at 254 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8665e56a-abc3-4227-9b66-5352a0a237f0")
+		)
+		(instances
+			(project "5Vfanctl"
+				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xGxx:74LVC2G17")
+		(at 134.62 177.8 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "575fad8b-85be-4e7a-a2e2-dfa20b42594e")
+		(property "Reference" "U2"
+			(at 135.89 167.3055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC2G17"
+			(at 135.89 169.7298 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering"
+			(at 134.62 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+			(at 134.62 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Buffer, Schmitt Triggered, Low-Voltage CMOS"
+			(at 134.62 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "e83cc70a-4f95-4338-b0be-a39de5a52760")
+		)
+		(pin "1"
+			(uuid "e99b3831-db35-4982-b4a6-05ef413e96a0")
+		)
+		(pin "3"
+			(uuid "b736378f-4418-4f9f-8180-ef4e0f40ca8d")
+		)
+		(pin "2"
+			(uuid "ee59a325-6e61-4366-9bf5-336da3c66ed5")
+		)
+		(pin "4"
+			(uuid "c6a6654d-2b60-4371-aa33-a31826c2735f")
+		)
+		(pin "5"
+			(uuid "6bdd30c9-ab4d-4af1-b271-18987082a311")
+		)
+		(instances
+			(project "rpi-fan-ctl"
+				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 254 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "58c55fe2-dc88-426c-b6e3-a54f43f1ac9a")
+		(property "Reference" "#PWR07"
+			(at 254 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 254 46.6669 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 254 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3965,7 +4534,77 @@
 		(instances
 			(project "5Vfanctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR02")
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 76.2 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a8f67a2-ea47-4d81-925c-ae6b1fa66eee")
+		(property "Reference" "R6"
+			(at 77.978 113.0878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1K"
+			(at 77.978 115.5121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 74.422 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 76.2 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "319afc1b-8484-4afd-945a-c13c42636f68")
+		)
+		(pin "1"
+			(uuid "cb9fce58-9135-484a-b000-b04dc5bc3ab3")
+		)
+		(instances
+			(project "rpi-fan-ctl"
+				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -3981,7 +4620,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f584fdf-c7af-4baf-bed9-711b84e07af1")
-		(property "Reference" "U1"
+		(property "Reference" "U2"
 			(at 31.242 55.9378 0)
 			(effects
 				(font
@@ -3999,7 +4638,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering"
 			(at 25.4 57.15 0)
 			(effects
 				(font
@@ -4027,19 +4666,19 @@
 			)
 		)
 		(pin "6"
-			(uuid "c0ada149-cd9f-41b0-afae-d6c813b28fca")
+			(uuid "c0ada149-cd9f-41b0-afae-d6c813b28fcd")
 		)
 		(pin "1"
-			(uuid "08b5078d-2ec2-4281-9428-c657b13b5a6e")
+			(uuid "08b5078d-2ec2-4281-9428-c657b13b5a71")
 		)
 		(pin "3"
-			(uuid "b736378f-4418-4f9f-8180-ef4e0f40ca8a")
+			(uuid "b736378f-4418-4f9f-8180-ef4e0f40ca8e")
 		)
 		(pin "2"
 			(uuid "23fd4aba-5e66-48f1-94c1-2c682e43bbd7")
 		)
 		(pin "4"
-			(uuid "c6a6654d-2b60-4371-aa33-a31826c2735c")
+			(uuid "c6a6654d-2b60-4371-aa33-a31826c27360")
 		)
 		(pin "5"
 			(uuid "b4c6609c-4be6-4e85-92eb-e6fb8eb4f1ed")
@@ -4047,8 +4686,160 @@
 		(instances
 			(project "rpi-fan-ctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "U1")
+					(reference "U2")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "J-Link-SWD-rescue:LTST-C191TBKT-dk_LED-Indication-Discrete")
+		(at 203.2 52.07 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "69ab0ce6-5fd3-416f-afc3-5dbbb9f06dc0")
+		(property "Reference" "D3"
+			(at 207.7212 49.4538 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LTST-C191TBKT"
+			(at 207.7212 52.1462 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
+			(at 208.28 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://optoelectronics.liteon.com/upload/download/DS22-2000-230/LTST-C191TBKT.pdf"
+			(at 210.82 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "LED BLUE CLEAR CHIP SMD"
+			(at 228.6 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "160-1647-1-ND"
+			(at 213.36 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LTST-C191TBKT"
+			(at 215.9 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Optoelectronics"
+			(at 218.44 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "LED Indication - Discrete"
+			(at 220.98 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "http://optoelectronics.liteon.com/upload/download/DS22-2000-230/LTST-C191TBKT.pdf"
+			(at 223.52 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/lite-on-inc/LTST-C191TBKT/160-1647-1-ND/573587"
+			(at 226.06 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Lite-On Inc."
+			(at 231.14 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 233.68 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "94a692f5-3703-4803-893f-430837b4520a")
+		)
+		(pin "1"
+			(uuid "7bbdd265-6163-4b3e-922c-558d3020712e")
+		)
+		(instances
+			(project "rpi-fan-ctl"
+				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
+					(reference "D3")
+					(unit 1)
 				)
 			)
 		)
@@ -4062,7 +4853,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6fcd5677-438f-4d9e-9697-ba951cfe0f73")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR016"
 			(at 228.6 133.35 0)
 			(effects
 				(font
@@ -4112,7 +4903,7 @@
 		(instances
 			(project "rpi-fan-ctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR014")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -4127,7 +4918,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "735052cf-e468-42d8-9167-335440d02f3d")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR04"
 			(at 63.5 39.37 0)
 			(effects
 				(font
@@ -4177,7 +4968,95 @@
 		(instances
 			(project "5Vfanctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR015")
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 266.7 57.15 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "751040a4-f246-47a5-afff-4d8b836ab373")
+		(property "Reference" "D4"
+			(at 268.732 55.9378 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D"
+			(at 268.732 58.3621 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 266.7 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 266.7 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 266.7 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 266.7 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95ce59bc-e80b-4ea4-8fc5-08ddb5ad4b0a")
+		)
+		(pin "2"
+			(uuid "e2947507-6801-4ee6-bb83-f61bacff5e2c")
+		)
+		(instances
+			(project ""
+				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -4192,7 +5071,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7561565e-159a-4102-982a-73cb2e91d169")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR012"
 			(at 25.4 76.2 0)
 			(effects
 				(font
@@ -4242,7 +5121,7 @@
 		(instances
 			(project "rpi-fan-ctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR019")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -4250,7 +5129,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 273.05 30.48 0)
+		(at 203.2 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4258,8 +5137,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e55d066-dc34-4f5b-b353-441d3de365ec")
-		(property "Reference" "R9"
-			(at 274.828 29.2678 0)
+		(property "Reference" "R5"
+			(at 204.978 36.8878 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4268,7 +5147,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 274.828 31.6921 0)
+			(at 204.978 39.3121 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4277,7 +5156,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 271.272 30.48 90)
+			(at 201.422 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4286,7 +5165,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 273.05 30.48 0)
+			(at 203.2 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4295,7 +5174,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 273.05 30.48 0)
+			(at 203.2 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4312,7 +5191,7 @@
 		(instances
 			(project "5Vfanctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "R9")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4327,7 +5206,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "834ad9f3-949d-4307-8d94-b610fd40120d")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR013"
 			(at 240.03 77.47 0)
 			(effects
 				(font
@@ -4377,7 +5256,7 @@
 		(instances
 			(project "5Vfanctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR06")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -4392,7 +5271,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8583af52-aedc-4900-a82e-74713a198102")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR020"
 			(at 152.4 194.31 0)
 			(effects
 				(font
@@ -4442,7 +5321,7 @@
 		(instances
 			(project "rpi-fan-ctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR022")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -4458,7 +5337,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85afb097-17d5-45f9-9251-38c776498daf")
-		(property "Reference" "J2"
+		(property "Reference" "RPI1"
 			(at 25.4 14.9055 0)
 			(effects
 				(font
@@ -4474,7 +5353,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 			(at 25.4 25.4 0)
 			(effects
 				(font
@@ -4519,7 +5398,7 @@
 		(instances
 			(project ""
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "J2")
+					(reference "RPI1")
 					(unit 1)
 				)
 			)
@@ -4534,7 +5413,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "87c210cf-6222-4e24-b17a-9c9b73ef2e72")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR02"
 			(at 63.5 29.21 0)
 			(effects
 				(font
@@ -4584,7 +5463,73 @@
 		(instances
 			(project "5Vfanctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR016")
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 76.2 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8915258f-b913-48e3-9d85-845ac77260b6")
+		(property "Reference" "#PWR019"
+			(at 76.2 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 192.0931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "842308ec-574c-4b3e-83c0-3bb4cdc4de55")
+		)
+		(instances
+			(project "rpi-fan-ctl"
+				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -4662,15 +5607,16 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC2G17")
-		(at 137.16 177.8 0)
+		(at 134.62 127 0)
+		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "9cf33479-4e19-46b3-b3c9-489262a46fa6")
-		(property "Reference" "U1"
-			(at 135.89 167.3055 0)
+		(property "Reference" "U2"
+			(at 135.89 116.5055 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4678,15 +5624,15 @@
 			)
 		)
 		(property "Value" "74LVC2G17"
-			(at 135.89 169.7298 0)
+			(at 135.89 118.9298 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering"
-			(at 137.16 177.8 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering"
+			(at 134.62 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4695,7 +5641,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 137.16 177.8 0)
+			(at 134.62 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4704,16 +5650,7 @@
 			)
 		)
 		(property "Description" "Dual Buffer, Schmitt Triggered, Low-Voltage CMOS"
-			(at 137.16 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey" "https://www.digikey.de/en/products/detail/texas-instruments/SN74LVC2G17DCKR/479737"
-			(at 137.16 177.8 0)
+			(at 134.62 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4722,100 +5659,35 @@
 			)
 		)
 		(pin "6"
-			(uuid "c0ada149-cd9f-41b0-afae-d6c813b28fca")
+			(uuid "c0ada149-cd9f-41b0-afae-d6c813b28fce")
 		)
 		(pin "1"
-			(uuid "08b5078d-2ec2-4281-9428-c657b13b5a6e")
+			(uuid "08b5078d-2ec2-4281-9428-c657b13b5a72")
 		)
 		(pin "3"
 			(uuid "c7a2de8e-f37e-4753-940a-399301b2deac")
 		)
 		(pin "2"
-			(uuid "ee59a325-6e61-4366-9bf5-336da3c66ed3")
+			(uuid "ee59a325-6e61-4366-9bf5-336da3c66ed6")
 		)
 		(pin "4"
 			(uuid "ce8183db-9042-451d-a3a1-c9ffe292f074")
 		)
 		(pin "5"
-			(uuid "6bdd30c9-ab4d-4af1-b271-18987082a30f")
+			(uuid "6bdd30c9-ab4d-4af1-b271-18987082a312")
 		)
 		(instances
 			(project "rpi-fan-ctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "U1")
+					(reference "U2")
 					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 176.53 35.56 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ab88f476-88d4-4f87-8fea-0f27a2cde0a9")
-		(property "Reference" "#PWR017"
-			(at 176.53 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 176.53 31.4269 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 176.53 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 176.53 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 176.53 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2d7bc7ec-0038-4c8e-820a-00447d5eefe3")
-		)
-		(instances
-			(project "5Vfanctl"
-				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 228.6 26.67 180)
+		(at 228.6 30.48 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4824,7 +5696,7 @@
 		(fields_autoplaced yes)
 		(uuid "ae22871f-410d-4841-a189-c62169d872a0")
 		(property "Reference" "FAN1"
-			(at 228.6 16.1755 0)
+			(at 228.6 19.9855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4832,15 +5704,15 @@
 			)
 		)
 		(property "Value" "Conn_01x04"
-			(at 228.6 18.5998 0)
+			(at 228.6 22.4098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 228.6 26.67 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal"
+			(at 228.6 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4849,7 +5721,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 228.6 26.67 0)
+			(at 228.6 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4858,7 +5730,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 228.6 26.67 0)
+			(at 228.6 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4888,170 +5760,152 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 176.53 57.15 90)
+		(lib_id "J-Link-SWD-rescue:LTST-C191TBKT-dk_LED-Indication-Discrete")
+		(at 76.2 179.07 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bd12b487-d90e-4c1b-b11b-87d20fb12244")
-		(property "Reference" "D1"
-			(at 179.451 57.5253 90)
+		(uuid "b7070c86-a369-40bd-8017-66b3a5742d0d")
+		(property "Reference" "D6"
+			(at 80.7212 176.4538 90)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PWM"
-			(at 179.451 59.9496 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 176.53 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 176.53 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 176.53 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "23d49df9-be24-49f2-ae8c-6613f2f5c948")
-		)
-		(pin "1"
-			(uuid "f4170560-c5d2-4219-b172-512803bceddc")
-		)
-		(instances
-			(project ""
-				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:NPN")
-		(at 173.99 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bf155f97-ccac-42ea-af72-327cd7f0e315")
-		(property "Reference" "Q4"
-			(at 178.8414 72.4478 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(justify left)
 			)
 		)
-		(property "Value" "NPN"
-			(at 178.8414 74.8721 0)
+		(property "Value" "LTST-C191TBKT"
+			(at 80.7212 179.1462 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 237.49 73.66 0)
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
+			(at 81.28 184.15 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 237.49 73.66 0)
+		(property "Datasheet" "http://optoelectronics.liteon.com/upload/download/DS22-2000-230/LTST-C191TBKT.pdf"
+			(at 83.82 184.15 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
-			(at 173.99 73.66 0)
+		(property "Description" "LED BLUE CLEAR CHIP SMD"
+			(at 101.6 184.15 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "NPN"
-			(at 173.99 73.66 0)
+		(property "Digi-Key_PN" "160-1647-1-ND"
+			(at 86.36 184.15 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" "GUMMELPOON"
-			(at 173.99 73.66 0)
+		(property "MPN" "LTST-C191TBKT"
+			(at 88.9 184.15 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=C 2=B 3=E"
-			(at 173.99 73.66 0)
+		(property "Category" "Optoelectronics"
+			(at 91.44 184.15 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "423dcbe3-6c19-46c8-bc34-dec0988757c2")
+		(property "Family" "LED Indication - Discrete"
+			(at 93.98 184.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
 		)
-		(pin "3"
-			(uuid "f064aced-3984-437a-a7fa-46b162c59d45")
+		(property "DK_Datasheet_Link" "http://optoelectronics.liteon.com/upload/download/DS22-2000-230/LTST-C191TBKT.pdf"
+			(at 96.52 184.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/lite-on-inc/LTST-C191TBKT/160-1647-1-ND/573587"
+			(at 99.06 184.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Lite-On Inc."
+			(at 104.14 184.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 106.68 184.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "312f8a96-4c6b-4a30-b04f-80be5252ecbd")
+			(uuid "2f1b27ff-d5ff-47b5-b8a0-2a8610d439ef")
+		)
+		(pin "1"
+			(uuid "396f786b-6718-4a9c-b176-d2f08ae9eb4a")
 		)
 		(instances
-			(project "5Vfanctl"
+			(project "rpi-fan-ctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "Q4")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -5059,32 +5913,34 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 160.02 73.66 90)
+		(at 76.2 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c072ab5a-89bb-4ef9-8df2-286a14ab85bd")
-		(property "Reference" "R8"
-			(at 160.02 68.4995 90)
+		(uuid "b840a0a3-958f-45bb-a8d1-af06ff9cd499")
+		(property "Reference" "R9"
+			(at 77.978 163.8878 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "1K"
-			(at 160.02 70.9238 90)
+			(at 77.978 166.3121 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 160.02 75.438 90)
+			(at 74.422 165.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5093,7 +5949,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.02 73.66 0)
+			(at 76.2 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5102,7 +5958,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 160.02 73.66 0)
+			(at 76.2 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5111,15 +5967,167 @@
 			)
 		)
 		(pin "2"
-			(uuid "27e2df05-9f01-41c9-a78c-4ed7b65f3e15")
+			(uuid "6af604ba-957d-4d21-a434-21091b4c8b8c")
 		)
 		(pin "1"
-			(uuid "9b7fe517-1670-4cc4-878f-562262c731be")
+			(uuid "26a52068-8cc3-48fe-ab1b-da1bd88fafef")
 		)
 		(instances
-			(project "5Vfanctl"
+			(project "rpi-fan-ctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "R8")
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "J-Link-SWD-rescue:LTST-C191TBKT-dk_LED-Indication-Discrete")
+		(at 177.8 52.07 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c108f1b9-0435-45ca-b805-c89515351964")
+		(property "Reference" "D2"
+			(at 182.3212 49.4538 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LTST-C191TBKT"
+			(at 182.3212 52.1462 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
+			(at 182.88 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://optoelectronics.liteon.com/upload/download/DS22-2000-230/LTST-C191TBKT.pdf"
+			(at 185.42 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "LED BLUE CLEAR CHIP SMD"
+			(at 203.2 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "160-1647-1-ND"
+			(at 187.96 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LTST-C191TBKT"
+			(at 190.5 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Optoelectronics"
+			(at 193.04 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "LED Indication - Discrete"
+			(at 195.58 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "http://optoelectronics.liteon.com/upload/download/DS22-2000-230/LTST-C191TBKT.pdf"
+			(at 198.12 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/lite-on-inc/LTST-C191TBKT/160-1647-1-ND/573587"
+			(at 200.66 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Lite-On Inc."
+			(at 205.74 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 208.28 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e21042a2-ad83-43ee-8cf4-aa83dd5099fe")
+		)
+		(pin "1"
+			(uuid "01368e55-7f20-46ec-8a1f-e71846061465")
+		)
+		(instances
+			(project "rpi-fan-ctl"
+				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -5134,7 +6142,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c528d5f0-b5dc-4df1-b968-2a8715a1dfa3")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR08"
 			(at 111.76 57.15 0)
 			(effects
 				(font
@@ -5184,7 +6192,7 @@
 		(instances
 			(project "rpi-fan-ctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR09")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -5199,7 +6207,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c6a86dd4-d7bc-466e-a897-40da44706f09")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR014"
 			(at 240.03 85.09 0)
 			(effects
 				(font
@@ -5249,7 +6257,95 @@
 		(instances
 			(project "5Vfanctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR05")
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 266.7 31.75 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c869f411-6ed1-4602-b28b-ae156516b031")
+		(property "Reference" "D1"
+			(at 268.732 30.5378 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D"
+			(at 268.732 32.9621 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 266.7 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 266.7 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 266.7 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 266.7 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "79d9ef38-6791-4bc0-aaad-2811cd534f68")
+		)
+		(pin "1"
+			(uuid "9719806c-d09b-4e3c-9349-44c1b10fa863")
+		)
+		(instances
+			(project ""
+				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -5257,15 +6353,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 254 59.69 0)
+		(at 254 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d0caa38c-8b52-4c42-8aab-bdb4af47e149")
-		(property "Reference" "#PWR04"
-			(at 254 66.04 0)
+		(property "Reference" "#PWR09"
+			(at 254 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5274,7 +6370,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 254 63.8231 0)
+			(at 254 67.6331 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5282,7 +6378,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 254 59.69 0)
+			(at 254 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5291,7 +6387,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254 59.69 0)
+			(at 254 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5300,7 +6396,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 254 59.69 0)
+			(at 254 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5314,7 +6410,7 @@
 		(instances
 			(project "5Vfanctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR04")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -5322,7 +6418,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 228.6 52.07 180)
+		(at 228.6 55.88 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5331,7 +6427,7 @@
 		(fields_autoplaced yes)
 		(uuid "d295ef50-ba57-4e45-a901-86d7d59fa867")
 		(property "Reference" "FAN2"
-			(at 228.6 41.5755 0)
+			(at 228.6 45.3855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5339,15 +6435,15 @@
 			)
 		)
 		(property "Value" "Conn_01x04"
-			(at 228.6 43.9998 0)
+			(at 228.6 47.8098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 228.6 52.07 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal"
+			(at 228.6 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5356,7 +6452,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 228.6 52.07 0)
+			(at 228.6 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5365,7 +6461,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 228.6 52.07 0)
+			(at 228.6 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5395,76 +6491,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 273.05 43.18 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d7c99905-8a9c-48a7-ac68-d033fd07ae6b")
-		(property "Reference" "D2"
-			(at 275.971 43.5553 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PWR"
-			(at 275.971 45.9796 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 273.05 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 273.05 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 273.05 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6e16e1ed-62b6-4fb4-9c0d-b373f6432dac")
-		)
-		(pin "2"
-			(uuid "e3e1770e-6937-43b7-b79c-9d080cc270d8")
-		)
-		(instances
-			(project ""
-				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 228.6 101.6 0)
 		(unit 1)
@@ -5473,7 +6499,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d8bf03ec-8077-4b77-8f27-d2db80153757")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR015"
 			(at 228.6 105.41 0)
 			(effects
 				(font
@@ -5523,7 +6549,7 @@
 		(instances
 			(project "rpi-fan-ctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR012")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -5531,7 +6557,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 176.53 86.36 0)
+		(at 177.8 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5539,8 +6565,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db3430c4-336e-4875-801c-f2bd38a0e4f6")
-		(property "Reference" "#PWR018"
-			(at 176.53 92.71 0)
+		(property "Reference" "#PWR010"
+			(at 177.8 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5549,7 +6575,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 176.53 90.4931 0)
+			(at 177.8 65.0931 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5557,7 +6583,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 176.53 86.36 0)
+			(at 177.8 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5566,7 +6592,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 176.53 86.36 0)
+			(at 177.8 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5575,7 +6601,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 176.53 86.36 0)
+			(at 177.8 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5589,7 +6615,7 @@
 		(instances
 			(project "5Vfanctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR018")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -5605,7 +6631,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0ca3459-2887-4a3c-a34b-bbd24e7af67f")
-		(property "Reference" "C5"
+		(property "Reference" "C3"
 			(at 53.721 55.9378 0)
 			(effects
 				(font
@@ -5659,7 +6685,7 @@
 		(instances
 			(project "rpi-fan-ctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "C5")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -5737,34 +6763,32 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 176.53 44.45 0)
+		(at 35.56 22.86 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e88e444a-0990-4815-b25d-c9ebeeb8c69a")
-		(property "Reference" "R7"
-			(at 178.308 43.2378 0)
+		(uuid "e4972ba4-d5ba-4533-9b8c-d34ed35e34a7")
+		(property "Reference" "R2"
+			(at 35.56 17.6995 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "1K"
-			(at 178.308 45.6621 0)
+		(property "Value" "0R"
+			(at 35.56 20.1238 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 174.752 44.45 90)
+			(at 35.56 24.638 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5773,7 +6797,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 176.53 44.45 0)
+			(at 35.56 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5782,7 +6806,77 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 176.53 44.45 0)
+			(at 35.56 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "414e1b75-02e4-4ff0-b49e-bada21a4e571")
+		)
+		(pin "1"
+			(uuid "52f5e83e-6775-4fa8-af84-aaba7130f7da")
+		)
+		(instances
+			(project "rpi-fan-ctl"
+				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 177.8 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e88e444a-0990-4815-b25d-c9ebeeb8c69a")
+		(property "Reference" "R4"
+			(at 179.578 36.8878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1K"
+			(at 179.578 39.3121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 176.022 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 177.8 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5799,7 +6893,7 @@
 		(instances
 			(project "5Vfanctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "R7")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -5807,15 +6901,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 273.05 21.59 0)
+		(at 203.2 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "f4f70c1a-fa59-40ec-b6e3-3ab73efd96c4")
-		(property "Reference" "#PWR01"
-			(at 273.05 25.4 0)
+		(property "Reference" "#PWR03"
+			(at 203.2 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5824,7 +6918,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 273.05 17.4569 0)
+			(at 203.2 25.0769 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5832,7 +6926,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 273.05 21.59 0)
+			(at 203.2 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5841,7 +6935,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 273.05 21.59 0)
+			(at 203.2 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5850,7 +6944,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 273.05 21.59 0)
+			(at 203.2 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5864,7 +6958,7 @@
 		(instances
 			(project "5Vfanctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR01")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -5879,7 +6973,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa339c1e-7ede-47b2-996a-e68a8fa1ec9a")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR06"
 			(at 25.4 48.26 0)
 			(effects
 				(font
@@ -5929,7 +7023,7 @@
 		(instances
 			(project "rpi-fan-ctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR020")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -5944,7 +7038,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fd99e283-72c1-4fd8-8616-7ab247d3d83f")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR018"
 			(at 152.4 143.51 0)
 			(effects
 				(font
@@ -5994,7 +7088,7 @@
 		(instances
 			(project "rpi-fan-ctl"
 				(path "/3f2a7073-9376-4675-a3c7-212932982c1f"
-					(reference "#PWR021")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
