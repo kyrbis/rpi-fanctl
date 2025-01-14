@@ -9038,7 +9038,7 @@
 	(footprint "LOGO"
 		(layer "B.Cu")
 		(uuid "b5d0e179-51f3-4b44-978c-49ba02456ee6")
-		(at 99.5 62.502658 180)
+		(at 148.25 62.5 180)
 		(property "Reference" "G***"
 			(at 0 0 0)
 			(layer "B.SilkS")
@@ -9423,7 +9423,7 @@
 		(uuid "fbf1e483-d6fe-47dc-ad36-e39fafa0ca5e")
 	)
 	(gr_text "regensberry"
-		(at 86.5 62.5 270)
+		(at 135.25 62.5 270)
 		(layer "B.SilkS")
 		(uuid "f265bd22-5028-4c68-8ce7-bf6905ad6820")
 		(effects
