@@ -59,7 +59,11 @@
         }
       ],
       "drc_exclusions": [
-        "courtyards_overlap|85195000|85565000|b503cd4e-1e81-4af0-9f27-775e58c84559|9e7c8897-686f-40a9-ace1-de7a35e6de83"
+        "courtyards_overlap|85195000|85565000|9e7c8897-686f-40a9-ace1-de7a35e6de83|b503cd4e-1e81-4af0-9f27-775e58c84559",
+        "lib_footprint_mismatch|59275000|82565000|b503cd4e-1e81-4af0-9f27-775e58c84559|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|59300000|92985000|9e7c8897-686f-40a9-ace1-de7a35e6de83|00000000-0000-0000-0000-000000000000",
+        "silk_overlap|83050000|88210000|de427b04-a6fd-473c-b87c-4b22d40ca913|2ad0ddc4-4f17-4061-8e5c-c05359114b78",
+        "silk_overlap|83770000|88210000|458cad0a-fe27-4deb-9e88-d61724da3f2a|2ad0ddc4-4f17-4061-8e5c-c05359114b78"
       ],
       "meta": {
         "filename": "board_design_settings.json",
@@ -623,6 +627,54 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Family",
+          "name": "Family",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DK_Datasheet_Link",
+          "name": "DK_Datasheet_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DK_Detail_Page",
+          "name": "DK_Detail_Page",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Status",
+          "name": "Status",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Category",
+          "name": "Category",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digi-Key_PN",
+          "name": "Digi-Key_PN",
           "show": false
         }
       ],
